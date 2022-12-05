@@ -46,7 +46,7 @@ def finish():
         data = json.loads(logfile.read())
         # print(data)
         
-        url = 'http://172.27.64.1:5000/results'
+        url = 'https://54.238.175.157:5000/results'
         print(f"{Fore.YELLOW}[DEBUG] Sending results to the server {url}{Style.RESET_ALL}")
 
         r = requests.post(url, json=data)
